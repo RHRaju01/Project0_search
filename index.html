@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Google</title>
+  <style>
+    *,
+    html {
+      content: "";
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      margin: 10px;
+      float: right;
+    }
+
+    nav>a {
+      padding-right: 10px;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .input {
+      background-color: #fff;
+      height: 45px;
+      border-color: rgba(223, 225, 229, 0);
+      border: 1px solid #dfe1e5;
+      width: 584px;
+      border-radius: 25px;
+    }
+
+    .search {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 30px;
+    }
+
+    .search-icon {
+      position: relative;
+      bottom: 71%;
+      left: 2%;
+      width: 1.3rem;
+      height: 1.3rem;
+      color: #9aa0a6;
+    }
+    .search-icon svg path {
+      fill: currentColor;
+    }
+
+    .btn1,
+    .btn2 {
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      color: #202124;
+      border-radius: 4px;
+      background-color: #f8f9fa;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #f8f9fa;
+      border: 1px solid #dadce0;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+    }
+
+    input {
+      padding: 1px 40px;
+    }
+
+    .btn1 {
+      margin-right: 15px;
+    }
+
+    @media screen and (max-width: 645px) {
+      .input {
+        width: 80vw;
+      }
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="image_search.html">Image Search</a>
+    <a href="advanced_search.html">Advanced Search</a>
+  </nav>
+  <div class="search">
+    <img class="image" src="images/googlelogo_color_272x92dp.png">
+    <form action="https://google.com/search">
+      <div class="input">
+        <input type="text" class="input" name="q" />
+        <div class="search-icon">
+          <span class="svg">
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+              </path>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="btn">
+        <input class="btn1" type="submit" value="Google Search" name="button" />
+        <input class="btn2" type="submit" value="I'm Feeling Unlucky" name="button" />
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

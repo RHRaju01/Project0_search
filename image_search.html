@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Google Images</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      margin: 10px;
+      float: right;
+    }
+
+    nav>a {
+      padding-right: 10px;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .logo {
+      background: url(/images/googlelogo_color_272x92dp.png) no-repeat;
+      background-size: 272px 92px;
+      height: 92px;
+      width: 272px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+
+    span.text {
+      position: relative;
+      top: 70px;
+      left: 215px;
+      color: #4285f4;
+      font-size: 110%;
+    }
+    .input {
+      background-color: #fff;
+      height: 45px;
+      border-color: rgba(223, 225, 229, 0);
+      border: 1px solid #dfe1e5;
+      width: 584px;
+      border-radius: 25px;
+    }
+
+    input {
+      padding-top: 1px;
+      padding-left: 40px;
+    }
+
+    .search-icon2 {
+      padding-left: 18px;
+    }
+    .search {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    /*left sided search icon*/
+    .search-icon1 {
+      position: relative;
+      bottom: 71%;
+      left: 2%;
+      width: 1.3rem;
+      height: 1.3rem;
+      color: #9aa0a6;
+    }
+    .search-icon1 svg path {
+      fill: currentColor;
+    }
+    /*right sided search icon*/
+    .btn {
+      position: relative;
+      bottom: 121%;
+      left: 90%;
+      color: #4285f4;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding-right: 10px;
+    }
+    .search-icon2 {
+      position: relative;
+      bottom: 119%;
+      left: 98%;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .search-icon2 svg path {
+      fill: currentColor;
+    }
+    input[type="submit"]:hover {
+      background-color: #f8f9fa;
+      border: 1px solid #dadce0;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+    }
+
+    @media screen and (max-width: 645px) {
+      .input {
+        width: 80vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Google Search</a>
+    <a href="advanced_search.html">Advanced Search</a>
+  </nav>
+  <div class="search">
+    <div class="logo">
+      <div>
+        <span class="text">images</span>
+      </div>
+    </div>
+    <form action="https://google.com/images">
+      <div class="input">
+        <input type="text" class="input" name="q" />
+        <div class="search-icon1 left">
+          <span class="svg">
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+              </path>
+            </svg>
+          </span>
+        </div>
+        <button class="btn" type="submit">
+          <div class="search-icon2 right">
+            <span class="svg">
+              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                </path>
+              </svg>
+            </span>
+          </div>
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
