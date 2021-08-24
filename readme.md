@@ -1,3 +1,5 @@
+Requirements: 
+
 Background
 Recall from lecture that we can create an HTML form using a <form> tag and can add <input> tags to create input fields for that form. Later in the course, we’ll see how to write web applications that can accept form data as input. For this project, we’ll write forms that send data to an existing web server: in this case, Google’s.
 
