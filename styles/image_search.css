@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -19,7 +20,7 @@ a:hover {
 }
 
 .logo {
-  background: url('images/googlelogo_color_272x92dp.png') no-repeat;
+  background-image: url("images/googlelogo_color_272x92dp.png") no-repeat;
   background-size: 272px 92px;
   height: 92px;
   width: 272px;
